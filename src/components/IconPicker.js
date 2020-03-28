@@ -9,7 +9,7 @@ function IconPicker(props){
                 <ol>
                     <li>Wybierz kolor</li>
                     <li>Skopiuj ikonę</li>
-                    <li>Użyj jako &lt;img src='<strong>wartość</strong>' ... &gt; w pojedyńczych cudzysłowach </li>
+                    <li>Użyj jako &lt;img src="<strong>wartość</strong>' ... &gt;</li>
                 </ol>        
                 {props.icons.map((svgData,index)=>
                     <ImageSvgBackground onClick={props.onIconClick} svgColor={props.currentColor.replace("#","")} svg={svgData} />
